@@ -1,6 +1,6 @@
-package group.msg.seleinium_schulung.cucumberStepdefs;
+package group.msg.seleinium_schulung.cucumber.cucumberStepdefs;
 
-import group.msg.seleinium_schulung.pageobjects.DuckduckgoPage;
+import group.msg.seleinium_schulung.cucumber.pageobjects.DuckduckgoPage;
 import io.cucumber.java.de.Angenommen;
 import io.cucumber.java.de.Und;
 import io.cucumber.java.de.Wenn;
@@ -9,12 +9,12 @@ public class DuckduckgoDeStepdefs extends AbstractPageStepdefs {
     private final DuckduckgoPage DUCKDUCKGOPAGE;
 
     public DuckduckgoDeStepdefs() {
-        DUCKDUCKGOPAGE = new DuckduckgoPage(driver);
+        DUCKDUCKGOPAGE = new DuckduckgoPage(DRIVER);
     }
 
     @Angenommen("Eine Suchmaschine 'duckduckgo.de' wird aufgerufen")
     public void eineSuchmaschineWirdAufgerufen() {
-        driver.get("https://www.duckduckgo.de/");
+        DRIVER.get("https://www.duckduckgo.de/");
         DUCKDUCKGOPAGE.clickInputSearchboxWebSiteDuckduckgo();
     }
 
@@ -23,8 +23,8 @@ public class DuckduckgoDeStepdefs extends AbstractPageStepdefs {
         DUCKDUCKGOPAGE.sendKeysInputSearchboxAndClickEnter(input);
     }
 
-    @Und("In der Ergebnisliste auf Link 'www.msg.group' gedrückt wird")
+    @Und("In der Ergebnisliste auf Link 'www.eventim.de' gedrückt wird")
     public void inDerErgebnislisteAufLinkWwwMsgGroupGedrucktWird() {
-        DUCKDUCKGOPAGE.clickLinkMsgGroupFromDuckduckgo();
+        DUCKDUCKGOPAGE.clickLinkEventimFromDuckduckgo();
     }
 }

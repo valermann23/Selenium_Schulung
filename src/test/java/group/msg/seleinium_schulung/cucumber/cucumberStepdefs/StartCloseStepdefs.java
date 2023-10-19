@@ -1,8 +1,6 @@
-package group.msg.seleinium_schulung.cucumberStepdefs;
+package group.msg.seleinium_schulung.cucumber.cucumberStepdefs;
 
-import group.msg.seleinium_schulung.factory.WebDriverFactory;
-import group.msg.seleinium_schulung.pageobjects.MsgGroupPage;
-import io.cucumber.java.de.Dann;
+import group.msg.seleinium_schulung.cucumber.factory.WebDriverFactory;
 import io.cucumber.java.de.Und;
 
 public class StartCloseStepdefs extends AbstractPageStepdefs {

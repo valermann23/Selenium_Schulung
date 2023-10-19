@@ -1,4 +1,4 @@
-package group.msg.seleinium_schulung.factory;
+package group.msg.seleinium_schulung.cucumber.factory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

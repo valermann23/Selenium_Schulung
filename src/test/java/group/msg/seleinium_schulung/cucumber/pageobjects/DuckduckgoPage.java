@@ -1,4 +1,4 @@
-package group.msg.seleinium_schulung.pageobjects;
+package group.msg.seleinium_schulung.cucumber.pageobjects;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 public class DuckduckgoPage {
     @FindBy(xpath = "//input[contains(@id, 'searchbox')]")
     private WebElement inputSearchboxDuckduckgo;
-    @FindBy(xpath = "//span[contains(text(),'msg:')]")
-    private WebElement linkToMsgGroupFromDuckduckgo;
+    @FindBy(xpath = "//span[contains(text(),'Eventim: ')]")
+    private WebElement linkToEventimFromDuckduckgo;
 
     public DuckduckgoPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -40,7 +40,7 @@ public class DuckduckgoPage {
      * Clicks on the link to the messaging group on the Duckduckgo website.
      * This method is used to simulate the action of clicking on the link to the messaging group on the Duckduckgo website.
      */
-    public void clickLinkMsgGroupFromDuckduckgo() {
-        linkToMsgGroupFromDuckduckgo.click();
+    public void clickLinkEventimFromDuckduckgo() {
+        linkToEventimFromDuckduckgo.click();
     }
 }
