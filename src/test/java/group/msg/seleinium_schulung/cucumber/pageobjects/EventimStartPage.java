@@ -26,39 +26,51 @@ public class EventimStartPage {
     @FindBy(xpath = "//*[text()='Elbphilharmonie Hamburg']")
     public WebElement eventsElbphilharmonieHamburg;
 
-
+    /**
+     * This method initializes the Eventim start page using the provided WebDriver.
+     *
+     * @param driver the WebDriver instance to use
+     */
     public EventimStartPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
     /**
-     * Checks if the "msgGroupSite" element is displayed on Msg Group Site.
-     * <p>
-     * This method uses the Assert.assertTrue() method to check if the "msgGroupSite" element is displayed.
-     * If the element is displayed, the method will continue execution without any assertion error.
-     * If the element is not displayed, an assertion error will be thrown.
+     * Checks if the Eventim site is displayed.
+     *
+     * @throws AssertionError if the Eventim site is not displayed.
      */
     public void checkIfDisplayedEventimSite() {
         Assert.assertTrue(logoEventim.isDisplayed(), "Eventim Site is not displayed");
     }
 
+    /**
+     * Checks if the "Menü Alle Events" button is displayed.
+     *
+     * @throws AssertionError if the "Menü Alle Events" button is not displayed.
+     */
     public void checkIfDisplayedMenueAlleEvents() {
         Assert.assertTrue(btnAlleEvents.isDisplayed(), "Menü Alle Events  is not displayed");
     }
 
-    public void clickMenueAlleOrte() {
+    /**
+     * Clicks the "Alle Orte" button.
+     */
+    public void clickBtnAlleOrte() {
         btnAlleOrte.click();
     }
 
+    /**
+     * Clicks the "Akzeptieren" button on the cookie dialog.
+     */
     public void clickBtnAkzeptierenCookieDialog() {
         btnAkzeptierenCookieDialog.click();
     }
 
+    /**
+     * Clicks the title "Elbphilharmonie Hamburg" in the events section.
+     */
     public void clickTitleElbphilharmonieHamburg() {
         eventsElbphilharmonieHamburg.click();
-    }
-
-    public void clickHamburg() {
-        ortHamburg.click();
     }
 }

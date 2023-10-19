@@ -25,7 +25,7 @@ public class EventimStartSeiteStepdefs extends AbstractPageStepdefs {
                 PAGE.checkIfDisplayedMenueAlleEvents();
                 break;
             case "Alle Orte":
-                PAGE.clickMenueAlleOrte();
+                PAGE.clickBtnAlleOrte();
                 break;
             default:
                 throw new IllegalStateException("Unexpected value: " + taste);

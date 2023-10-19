@@ -45,7 +45,7 @@ public class hamburgElbphilharmonieTest {
      * und wie ein Benutzer die Eventim-Webseite nutzt, um nach Veranstaltungen in der Elbphilharmonie Hamburg zu suchen
      */
     @Test
-    public void hamburgElbphilharmonieTest() {
+    public void hamburgElbphilharmoniePageTest() {
         //Precondition
         driver.get("https://www.duckduckgo.de/");
         //Prozess
@@ -55,7 +55,7 @@ public class hamburgElbphilharmonieTest {
         eventimStartPage.clickBtnAkzeptierenCookieDialog();
         wait.until(ExpectedConditions.visibilityOf(eventimStartPage.btnAlleEvents));
         eventimStartPage.checkIfDisplayedMenueAlleEvents();
-        eventimStartPage.clickMenueAlleOrte();
+        eventimStartPage.clickBtnAlleOrte();
         actions.moveToElement(eventimStartPage.ortHamburg).perform();
         wait.until(ExpectedConditions.visibilityOf(eventimStartPage.eventsElbphilharmonieHamburg));
         eventimStartPage.clickTitleElbphilharmonieHamburg();
