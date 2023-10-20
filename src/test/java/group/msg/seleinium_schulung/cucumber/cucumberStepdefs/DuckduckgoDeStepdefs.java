@@ -23,8 +23,8 @@ public class DuckduckgoDeStepdefs extends AbstractPageStepdefs {
         DUCKDUCKGOPAGE.sendKeysInputSearchboxAndClickEnter(input);
     }
 
-    @Und("In der Ergebnisliste auf Link 'www.eventim.de' gedrückt wird")
+    @Und("In der Ergebnisliste auf Link 'Karriere Hamburger Hochbahn AG' gedrückt wird")
     public void inDerErgebnislisteAufLinkWwwMsgGroupGedrucktWird() {
-        DUCKDUCKGOPAGE.clickLinkEventimFromDuckduckgo();
+        DUCKDUCKGOPAGE.linkToKarriereHamburgerHochbahnAGFromDuckduckgo();
     }
 }

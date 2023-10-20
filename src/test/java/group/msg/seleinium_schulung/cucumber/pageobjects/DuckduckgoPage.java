@@ -10,8 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 public class DuckduckgoPage {
     @FindBy(xpath = "//input[contains(@id, 'searchbox')]")
     private WebElement inputSearchboxDuckduckgo;
-    @FindBy(xpath = "//span[contains(text(),'Eventim: ')]")
-    private WebElement linkToEventimFromDuckduckgo;
+    @FindBy(xpath = "//span[contains(text(),'Karriere | Hamburger Hochbahn AG')]")
+    private WebElement linkToKarriereHamburgerHochbahnAGFromDuckduckgo;
 
     public DuckduckgoPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -40,7 +40,7 @@ public class DuckduckgoPage {
      * Clicks on the link to the messaging group on the Duckduckgo website.
      * This method is used to simulate the action of clicking on the link to the messaging group on the Duckduckgo website.
      */
-    public void clickLinkEventimFromDuckduckgo() {
-        linkToEventimFromDuckduckgo.click();
+    public void linkToKarriereHamburgerHochbahnAGFromDuckduckgo() {
+        linkToKarriereHamburgerHochbahnAGFromDuckduckgo.click();
     }
 }

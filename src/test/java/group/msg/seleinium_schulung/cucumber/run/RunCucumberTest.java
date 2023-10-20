@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources",
-        tags = "@elbphilharmonie",
+        tags = "@hochbahn",
         glue = "group.msg.seleinium_schulung.cucumber.cucumberStepdefs",
         plugin = { "pretty", "html:target/cucumber-reports/cucumber.html",
                 "json:target/cucumber-reports/cucumber.json" })
